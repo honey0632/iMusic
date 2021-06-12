@@ -112,6 +112,7 @@ public class PlaySong extends AppCompatActivity {
             public void onClick(View v) {
                 mediaPlayer.stop();
                 mediaPlayer.release();
+                seekBar.setProgress(0);
                 if(position!=0){
                     position = position - 1;
                 }
@@ -133,6 +134,7 @@ public class PlaySong extends AppCompatActivity {
             public void onClick(View v) {
                 mediaPlayer.stop();
                 mediaPlayer.release();
+                seekBar.setProgress(0);
                 if(position!=songs.size()-1){
                     position = position + 1;
                 }
